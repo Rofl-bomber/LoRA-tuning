@@ -1,11 +1,5 @@
 # 🛡️ SafeRAG-Shield: Выравнивание безопасности LLM через GRPO и QLoRA
 
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![Unsloth](https://img.shields.io/badge/Accelerated%20by-Unsloth-orange)](https://github.com/unslothai/unsloth)
-[![TRL](https://img.shields.io/badge/HuggingFace-TRL%20(GRPO)-yellow)](https://huggingface.co/docs/trl)
-[![Model](https://img.shields.io/badge/Base%20Model-Qwen2.5--1.5B--Instruct-purple)](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-
 **SafeRAG-Shield** — пайплайн обучения с подкреплением (Reinforcement Learning Alignment), созданный для защиты RAG-систем (Retrieval-Augmented Generation) от атак класса **Indirect Prompt Injection** (OWASP LLM01).
 
 Используя алгоритм **Group Relative Policy Optimization (GRPO)** и метод квантованной адаптации низкого ранга **4-bit QLoRA**, проект обучает модель `Qwen2.5-1.5B-Instruct` анализировать извлеченный контекст документов в явном блоке рассуждений (`<think>`), нейтрализовать состязательные триггеры и возвращать точные, обоснованные контекстом ответы (`<answer>`). Обучение занимает **около 25 минут на одном бесплатном GPU NVIDIA T4 (15 ГБ VRAM)**.
