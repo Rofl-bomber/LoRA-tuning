@@ -79,9 +79,7 @@ pip install --upgrade trl datasets transformers accelerate peft bitsandbytes gra
 ```
 
 ### 2. Запуск в Google Colab
-1. Откройте блокнот `SafeRAG_Shield.ipynb` в Google Colab.
-2. В меню выберите: **Среда выполнения $\rightarrow$ Сменить среду $\rightarrow$ T4 GPU**.
-3. Запустите ячейки по порядку. Обучение займет около 20–25 минут.
+
 
 ### 3. Демо-интерфейс
 В конце ноутбука запускается веб-интерфейс на **Gradio**, где можно руками вбить любой каверзный текст документа и проверить реакцию модели.
